@@ -24,9 +24,10 @@
     font-size: 22px;
     line-height: 120%;
     letter-spacing: 0px;
+    color: var(--clr-slate-900);
 }
   
-.outfit-bold {
+.outfit-regular {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -34,6 +35,8 @@
     font-size: 15px;
     line-height: 140%;
     letter-spacing: 0.2px;
+    color: var(--clr-slate-500);
+    margin-top: var(--spacing-200);
 }
 
 /* CSS RESET  -------------------------------------------------------------------------------- */
@@ -73,8 +76,16 @@
     text-wrap: balance;
   }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: var(--spacing-200);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 body { background-color: var(--clr-slate-300); }
 
 /* Centers the card*/
@@ -92,6 +103,9 @@ body { background-color: var(--clr-slate-300); }
     padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
     border-radius: 20px;
     box-shadow: 0 25px 25px 0 rgb(0,0,0,0.0477);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* QR Code Image */
@@ -101,4 +115,11 @@ body { background-color: var(--clr-slate-300); }
     height: 288px;
     background-size: cover;
     border-radius: 10px;
+}
+
+/* Card Body */
+.card-body {
+    margin-top: var(--spacing-300);
+    text-align: center;
+    width: 256px;
 }
