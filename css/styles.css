@@ -72,3 +72,25 @@
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body { background-color: var(--clr-slate-300); }
+
+/* Centers the card*/
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 320px;
+    height: 499px;
+    background-color: var(--clr-white);
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+    box-shadow: 0 25px 25px 0 rgb(0,0,0,0.0477);
+}
+
